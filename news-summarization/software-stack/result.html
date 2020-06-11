@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title> Text Generation </title>
+	</head>
+	<body>
+		<div style="padding-left: 30px;">
+			<h1> USE-LSTM Stacked Design for Preliminary Text Generation </h1>
+			<br>
+			<p> The provided news article was: </p>
+			<p> {{ news }} </p>
+			<br>
+			<p> The generated text, with stimulus in bold, is: </p>
+			<p><b>  {{ stim }} </b> {{ seq }} </p>
+			<br>
+			<form action="/", method="get">
+			  <input type="submit" value="Back">
+			</form> 
+		</div>
+	</body>
+</html>

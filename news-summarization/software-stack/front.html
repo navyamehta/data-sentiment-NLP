@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title> Text Generation </title>
+	</head>
+	<body>
+		<div style="padding-left: 30px;">
+			<br>
+			<h1> USE-LSTM Stacked Design for Preliminary Text Generation </h1>
+			<br>
+			<p> Please enter a valid news article or otherwise to replicate. The first 100 characters will be used as stimulus to the model, and the articles context embedded with USE. For more details on model architecture, training and beam search, please refer to the GitHub repository. </p>
+			<form action="/analysis", method="post">
+			  <label for="fweb">News Article:</label><br>
+			  <input type="textarea" id="fweb" name="fweb" value=""><br>
+			  <label for="num">Number of Words To Be Generated:</label><br>
+			  <input type="number" id="num" name="num" value=5><br><br>
+			  <input type="submit" value="Submit">
+			</form> 
+		</div>
+	</body>
+</html>
