@@ -32,7 +32,7 @@ class Model():
 			start[0,-k:] = beamseq
 			wordsgen+=np.sum(np.array(beamseq)==0)
 		#Incase we overshoot numwords with numerous words in a single beam
-		seq = " ".join(seq.split()[:-(wordsgen-numwords)]) if wordsgen>numwords else seq
+		seq = " ".join(seq.split()[:wordsgen])
 		return stim, seq, True
 
 	## SECOND-ORDER FUNCTONS
